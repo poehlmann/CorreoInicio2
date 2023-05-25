@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Yape</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      position: relative;
+    }
+    .container img.background-img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .background-img{
+      content: url(images/all_desktop.svg);
+    }
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    @media (max-width: 991px) {
+      .background-img{
+        content: url(images/all_mobile.svg);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <img  class="background-img" alt="Yape correo de inicio">
+</div>
+</body>
+</html>
